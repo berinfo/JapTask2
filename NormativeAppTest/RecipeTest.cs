@@ -41,6 +41,7 @@ namespace NormativeAppTest
             });
             _recipeService = new RecipeService(mapperConfiguration.CreateMapper(), _context);
              SetUpDb();
+           
         }
         [Test]
         public void CreateRecipe_AddTwoSameIngredients_ThrowEx()
@@ -170,7 +171,7 @@ namespace NormativeAppTest
             Assert.AreEqual(newRecipe.Name, dbRecipe.Name);
             Assert.AreEqual(newRecipe.Description, dbRecipe.Description);
             Assert.AreEqual(newRecipe.CategoryId, dbRecipe.CategoryId);
-            Assert.True(newRecipe.RecipeIngredients.Any());
+           
         }
         [Test]
         public async Task CreateRecipe_Success1()
@@ -203,7 +204,7 @@ namespace NormativeAppTest
             Assert.AreEqual(newRecipe.Name, dbRecipe.Name);
             Assert.AreEqual(newRecipe.Description, dbRecipe.Description);
             Assert.AreEqual(newRecipe.CategoryId, dbRecipe.CategoryId);
-            Assert.True(newRecipe.RecipeIngredients.Any());
+         
         }
 
         [TestCase(1)]
@@ -219,6 +220,15 @@ namespace NormativeAppTest
 
         public void SetUpDb()
         {
+            //_context.Categories.AddRange(new Category { Id = 1, Name = "Category1" }, new Category { Id = 2, Name = "Category2" }, new Category { Id = 3, Name = "Category3" });
+            //_context.Categories.Add(new Category { Id = 2, Name = "Category2" });
+            //_context.Categories.Add(new Category { Id = 3, Name = "Category3" });
+           //_context.Recipes.Add(new Recipe { Id = 1, Name = "Recipe one", CategoryId = 1, Description = "Description of recipe number one" });
+           //  _context.Recipes.Add(new Recipe { Id = 2, Name = "Recipe two", CategoryId = 2, Description = "Description of recipe number two" });
+          
+            //_context.Ingredients.Add(new Ingredient { Id = 1, Name = "Ingred1" });
+            //_context.Ingredients.Add(new Ingredient { Id = 2, Name = "ingred2" });
+
             _context.Categories.AddRange(CategoryData.GetCategoriesData());
             _context.Ingredients.AddRange(IngredientData.GetIngredientData());
             _context.Recipes.AddRange(RecipeData.GetRecipeData());
