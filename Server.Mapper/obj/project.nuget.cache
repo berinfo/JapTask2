@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lHu+p+H/VXVBSfl139dG+2x28rjfU/UnyFslK9sfvvRWxI9IE/08uf1BD636+IWi6bE0XMqLAfwVgX9Fo6y4/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\BERINFO\\JapTask2\\Server.Mapper\\Server.Mapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BERINFO\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\BERINFO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
