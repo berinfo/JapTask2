@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4sykALOOG4erAC1Rntu3kYhG5xF7Gw8fXA1Q67S0K5Xbkyw2sxBawdHIIL5XShYEz6LMenIHoWjtU5B1khS8Tg==",
+  "dgSpecHash": "PsZCZjSPbFy2HYaa1rCNqNa87AGxauKqoaibHO+jM/tKBIiW2RGWWHVWUOXuyJpUD24KZVc9Gr5kd/0MKWyCew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BERINFO\\JapTask2\\NormativeAppTest\\NormativeAppTest.csproj",
+  "projectFilePath": "C:\\Users\\BERINFO\\JapTask2\\NormativeAppTest\\Server.NormativeAppTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BERINFO\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\BERINFO\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",

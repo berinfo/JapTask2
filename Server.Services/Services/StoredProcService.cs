@@ -42,7 +42,5 @@ namespace Server.Services.Services
         {
             return await _dbConnection.QueryAsync<RecipesWith6IngredientsDto>("exec spGet_Recipes_With_6orMore_Ingredients");
         }
-
-
     }
 }

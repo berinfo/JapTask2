@@ -2,9 +2,9 @@
 {
     public class GetTotalCostDto
     {
-        public float BaseQuantity { get; set; }
-        public float UsedQuantity { get; set; }
-        public float Price { get; set; }
+        public decimal BaseQuantity { get; set; }
+        public decimal UsedQuantity { get; set; }
+        public decimal Price { get; set; }
                
     }
 }

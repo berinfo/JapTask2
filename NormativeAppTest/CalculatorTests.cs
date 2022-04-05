@@ -11,10 +11,10 @@ using System.Threading.Tasks;
 namespace NormativeAppTest
 {
     [TestFixture]
-    public class CalculatingTest
+    public class CalculatorTests
     {
         [Test]
-        public void CalculateIngredientCostPrice()
+        public void CalculateIngredientCostPrice_TwoDecimal()
         {
             var recipeIng = new RecipeIngredients
             {
@@ -24,16 +24,16 @@ namespace NormativeAppTest
                 {
                     Name = "Ingredient number one",
                     PurchaseQuantity = 1,
-                    PurchasePrice = 2,
+                    PurchasePrice = 2.55m,
                     PurchaseUnit = UnitEnum.kg,
                 }
             };
             var res = Calculator.IngredientTotalCost(recipeIng);
-            var expectedPrice = 0.2f;
+            var expectedPrice = 0.255m;
             Assert.AreEqual(expectedPrice, res);
         }
         [Test]
-        public void CalculateIngredientCostPrice1()
+        public void CalculateIngredientCostPrice_WithNoMeasureConversion()
         {
             var recipeIng = new RecipeIngredients
             {
@@ -53,7 +53,7 @@ namespace NormativeAppTest
         }
 
         [Test]
-        public void CalculateIngredientCostPrice2()
+        public void CalculateIngredientCostPrice_WithConversion()
         {
             var recipeIng = new RecipeIngredients
             {
@@ -73,7 +73,7 @@ namespace NormativeAppTest
         }
 
         [Test]
-        public void CalculateRecipeTotalCost2()
+        public void CalculateRecipeTotalCost_WithTwoIngredients()
         {
             var recipe = new Recipe
             {
@@ -114,7 +114,7 @@ namespace NormativeAppTest
             Assert.AreEqual(expectedPrice, res);
         }
         [Test]
-        public void CalculateRecipeTotalCost1()
+        public void CalculateRecipeTotalCost_WithThreeIngredients_PurchasePriceTwoDecimal()
         {
             var recipe = new Recipe
             {
@@ -131,7 +131,7 @@ namespace NormativeAppTest
                              {
                                 Name = "Ingredient number one",
                                 PurchaseQuantity = 1,
-                                PurchasePrice = 2,
+                                PurchasePrice = 2.70m,
                                 PurchaseUnit = UnitEnum.kg,
                              }
                     },
@@ -143,7 +143,7 @@ namespace NormativeAppTest
                              {
                                 Name = "Ingredient number two",
                                 PurchaseQuantity = 500,
-                                PurchasePrice = 10,
+                                PurchasePrice = 10.55m,
                                 PurchaseUnit = UnitEnum.g,
                              }
                     },
@@ -162,12 +162,12 @@ namespace NormativeAppTest
                 }
             };
             var res = Calculator.RecipeTotalCost(recipe);
-            var expectedPrice = 2013.2f;
+            var expectedPrice = 2013.985m;
 
             Assert.AreEqual(expectedPrice, res);
         }
         [Test]
-        public void CalculateRecipeTotalCost3()
+        public void CalculateRecipeTotalCost_IngredientsMeasuredInGrams()
         {
             var recipe = new Recipe
             {

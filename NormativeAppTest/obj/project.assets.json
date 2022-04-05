@@ -7276,9 +7276,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BERINFO\\JapTask2\\NormativeAppTest\\NormativeAppTest.csproj",
-      "projectName": "NormativeAppTest",
-      "projectPath": "C:\\Users\\BERINFO\\JapTask2\\NormativeAppTest\\NormativeAppTest.csproj",
+      "projectUniqueName": "C:\\Users\\BERINFO\\JapTask2\\NormativeAppTest\\Server.NormativeAppTest.csproj",
+      "projectName": "Server.NormativeAppTest",
+      "projectPath": "C:\\Users\\BERINFO\\JapTask2\\NormativeAppTest\\Server.NormativeAppTest.csproj",
       "packagesPath": "C:\\Users\\BERINFO\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\BERINFO\\JapTask2\\NormativeAppTest\\obj\\",
       "projectStyle": "PackageReference",

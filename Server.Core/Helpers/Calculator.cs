@@ -7,7 +7,7 @@ namespace Server.Core.Helpers
 {
     public static class Calculator
     {
-        public static float QtyConvert(float qty, UnitEnum unit)
+        public static decimal QtyConvert(decimal qty, UnitEnum unit)
         { 
             var convertedQty = qty / 1000;
 
@@ -16,7 +16,7 @@ namespace Server.Core.Helpers
 
             return qty;
         }
-        public static float RecipeTotalCost(Recipe recipe)
+        public static decimal RecipeTotalCost(Recipe recipe)
         {
             var cost = recipe.RecipeIngredients.Select(i => new GetTotalCostDto
 
@@ -29,12 +29,12 @@ namespace Server.Core.Helpers
 
             });
 
-            float totalCost = cost.Sum(c => c.UsedQuantity * (c.Price / c.BaseQuantity));
+            decimal totalCost = cost.Sum(c => c.UsedQuantity * (c.Price / c.BaseQuantity));
 
             return totalCost;
         }
 
-        public static float IngredientTotalCost(RecipeIngredients ingredient)
+        public static decimal IngredientTotalCost(RecipeIngredients ingredient)
         {
             var cost = new GetTotalCostDto
             {
@@ -43,7 +43,7 @@ namespace Server.Core.Helpers
                 Price = ingredient.Ingredient.PurchasePrice
             };
 
-            float totalCost = cost.UsedQuantity * (cost.Price / cost.BaseQuantity);
+            decimal totalCost = cost.UsedQuantity * (cost.Price / cost.BaseQuantity);
             return totalCost;
         }
     }
