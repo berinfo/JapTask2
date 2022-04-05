@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H3x0npR2I7hHj1bsXdvKzOYeCTBEzviZn2eTx6iRtUrNOCk9MnoBKiPkSVYLyjrs+EuS9tT3iNHtQ6JiFhMQeQ==",
+  "dgSpecHash": "dTOEL6ggvBJS7bl5BNeHr/KCJlI7BOFDiRyd0SxWmFWZbfy2ie5Y44r8Ej8+pGzxjxapSexrtd9jaquJOEuUCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BERINFO\\JapTask2\\server\\server.Api.csproj",
+  "projectFilePath": "C:\\Users\\BERINFO\\JapTask2\\server\\Server.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BERINFO\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\BERINFO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
